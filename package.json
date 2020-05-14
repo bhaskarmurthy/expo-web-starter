@@ -7,7 +7,8 @@
     "web": "expo start --web",
     "eject": "expo eject",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "prebuild": "npx expo-optimize",
+    "build": "expo build:web"
   },
   "dependencies": {
     "expo": "~37.0.3",
