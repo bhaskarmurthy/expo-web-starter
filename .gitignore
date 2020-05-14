@@ -16,3 +16,5 @@ storybook-static
 
 # macOS
 .DS_Store
+
+.vercel
