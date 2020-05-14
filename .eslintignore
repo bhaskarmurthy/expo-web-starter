@@ -1,0 +1,11 @@
+# expo
+node_modules/**/*
+.expo/*
+web-build/
+web-report/
+
+# storybook
+storybook-static
+
+# vercel
+.vercel
