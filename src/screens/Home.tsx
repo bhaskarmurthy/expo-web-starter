@@ -1,5 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
 const styles = StyleSheet.create({
     container: {
@@ -9,10 +10,13 @@ const styles = StyleSheet.create({
     },
 })
 
+const TabNavigator = createBottomTabNavigator()
+
 const Home: React.FC = () => (
-    <View style={styles.container}>
-        <Text>Home</Text>
-    </View>
+    <TabNavigator.Navigator>
+        <TabNavigator.Screen name="tab1" component={View} />
+        <TabNavigator.Screen name="tab2" component={View} />
+    </TabNavigator.Navigator>
 )
 
 export default Home
