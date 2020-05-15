@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { Link } from '../shared/Navigation'
+import { Link } from '../shared/Navigator/router'
 
 const styles = StyleSheet.create({
     container: {
