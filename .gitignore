@@ -11,10 +11,14 @@ npm-debug.*
 web-build/
 web-report/
 
+# yarn
+yarn-error.log
+
 # storybook
 storybook-static
 
 # macOS
 .DS_Store
 
+# vercel
 .vercel
