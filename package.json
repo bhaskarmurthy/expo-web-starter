@@ -6,10 +6,11 @@
         "ios": "expo start --ios",
         "web": "expo start --web",
         "eject": "expo eject",
-        "storybook": "start-storybook -p 6006",
         "prebuild": "npx expo-optimize",
         "build": "expo build:web",
-        "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
+        "test": "jest --passWithNoTests",
+        "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix",
+        "storybook": "start-storybook -p 6006"
     },
     "dependencies": {
         "expo": "~37.0.3",
@@ -38,11 +39,15 @@
         "eslint-plugin-react": "^7.20.0",
         "expo-cli": "^3.20.3",
         "husky": "^4.2.5",
+        "jest-expo": "^37.0.0",
         "lint-staged": "^10.2.2",
         "prettier": "^2.0.5",
         "typescript": "~3.8.3"
     },
     "private": true,
+    "jest": {
+        "preset": "jest-expo/universal"
+    },
     "husky": {
         "hooks": {
             "pre-commit": "lint-staged"
